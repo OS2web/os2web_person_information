@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains os2web_person_information.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function os2web_person_information_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the os2web_person_information module.
+    case 'help.page.os2web_person_information':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides Person information content type, taxonomy vocabulary for grouping persons, paragraph with reference to group, view by person group') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function os2web_person_information_theme($existing, $type, $theme, $path) {
+  return [
+    'node__os2web_person_information__teaser' => [
+      'base hook' => 'node',
+    ],
+  ];
+}

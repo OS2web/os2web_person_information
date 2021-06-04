@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies: {  }
+id: config_split.config_split.os2web_person_information.yml
+label: 'OS2Web Person information'
+description: ''
+folder: modules/contrib/os2web_person_information/config/install
+module: {  }
+theme: {  }
+blacklist:
+  - 'os2web_person_information*'
+  - '*os2web_person_information*'
+  - '*os2web_person_information'
+  - 'os2web_pi*'
+  - '*os2web_pi*'
+  - '*os2web_pi'
+graylist: {  }
+graylist_dependents: false
+graylist_skip_equal: false
+weight: 0

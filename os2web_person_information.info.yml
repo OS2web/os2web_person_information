@@ -1,0 +1,13 @@
+name: 'OS2Web person information'
+type: module
+description: 'Provides Person information content type, taxonomy vocabulary for grouping persons, paragraph with reference to group, view by person group'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'OS2Web'
+dependencies:
+  - paragraphs
+  - crop
+  - image_widget_crop
+  - content_moderation
+  - scheduler
+  - scheduler_content_moderation_integration

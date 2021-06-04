@@ -1,0 +1,15 @@
+{
+  "name": "os2web/os2web_person_information",
+  "description": "OS2Web person information",
+  "type": "drupal-module",
+  "require": {
+    "drupal/paragraphs": "*",
+    "drupal/crop": "*",
+    "drupal/image_widget_crop": "*",
+    "drupal/content_moderation": "*",
+    "drupal/scheduler": "*",
+    "drupal/scheduler_content_moderation_integration": "*"
+  },
+  "license": "EUPL-1.2",
+  "minimum-stability": "dev"
+}

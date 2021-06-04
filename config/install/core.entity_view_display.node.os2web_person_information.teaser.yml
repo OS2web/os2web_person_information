@@ -1,0 +1,64 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.os2web_person_information.body
+    - field.field.node.os2web_person_information.field_os2web_pi_group
+    - field.field.node.os2web_person_information.field_os2web_pi_image
+    - field.field.node.os2web_person_information.field_os2web_pi_party
+    - field.field.node.os2web_person_information.field_os2web_pi_role
+    - field.field.node.os2web_person_information.field_os2web_pi_weight
+    - image.style.os2web_pi_image
+    - node.type.os2web_person_information
+  module:
+    - svg_image
+    - text
+    - user
+id: node.os2web_person_information.teaser
+targetEntityType: node
+bundle: os2web_person_information
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_os2web_pi_image:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: os2web_pi_image
+      image_link: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+    third_party_settings: {  }
+  field_os2web_pi_party:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_os2web_pi_role:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_os2web_pi_group: true
+  field_os2web_pi_weight: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
