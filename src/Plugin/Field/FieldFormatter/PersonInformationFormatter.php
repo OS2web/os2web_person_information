@@ -2,6 +2,7 @@
 
 namespace Drupal\os2web_person_information\Plugin\Field\FieldFormatter;
 
+use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Drupal\Core\Field\FieldDefinitionInterface;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\Plugin\Field\FieldFormatter\EntityReferenceFormatterBase;
@@ -50,7 +51,7 @@ class PersonInformationFormatter extends EntityReferenceFormatterBase {
    * {@inheritdoc}
    */
   public static function isApplicable(FieldDefinitionInterface $field_definition) {
-    return $field_definition->get('field_name') == 'field_os2web_pi_paragraph_group';
+    return ($field_definition instanceof ConfigEntityInterface) && $field_definition->get('field_name') == 'field_os2web_pi_paragraph_group';
   }
 
 }
