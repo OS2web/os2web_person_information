@@ -6,7 +6,6 @@
     "drupal/paragraphs": "*",
     "drupal/crop": "*",
     "drupal/image_widget_crop": "*",
-    "drupal/content_moderation": "*",
     "drupal/scheduler": "*",
     "drupal/scheduler_content_moderation_integration": "*"
   },
