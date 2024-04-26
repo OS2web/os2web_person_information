@@ -2,12 +2,22 @@
   "name": "os2web/os2web_person_information",
   "description": "OS2Web person information",
   "type": "drupal-module",
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    "assets": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  },
   "require": {
-    "drupal/paragraphs": "*",
+    "drupal/paragraphs": "^1.17",
     "drupal/crop": "*",
     "drupal/image_widget_crop": "*",
-    "drupal/scheduler": "*",
-    "drupal/scheduler_content_moderation_integration": "*"
+    "drupal/scheduler": "dev-2.x",
+    "drupal/scheduler_content_moderation_integration": "^2.0"
   },
   "license": "EUPL-1.2",
   "minimum-stability": "dev"
