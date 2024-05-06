@@ -16,7 +16,7 @@
     "drupal/paragraphs": "^1.17",
     "drupal/crop": "*",
     "drupal/image_widget_crop": "*",
-    "drupal/scheduler": "dev-2.x",
+    "drupal/scheduler": "^2.0",
     "drupal/scheduler_content_moderation_integration": "^2.0"
   },
   "license": "EUPL-1.2",
